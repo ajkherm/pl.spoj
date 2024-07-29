@@ -3,7 +3,7 @@
 
 import Foundation
 
-while var n = Optional(getchar_unlocked()), n != EOF {
+while case var n = getchar_unlocked(), n != EOF {
     switch n {
         case 65...90:
             n = 65 + (n - 52) % 26

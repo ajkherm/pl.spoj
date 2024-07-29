@@ -1,5 +1,5 @@
 #!/usr/bin/env xcrun swift
-// MARK: - [Reszta z dzielenia](https://pl.spoj.com/problems/AL_06_01/)
+/// https://pl.spoj.com/problems/AL_06_01/
 
 for _ in 1...Int(readLine()!)! {
     let t = readLine()!.split(separator: " ").compactMap { Int($0) }

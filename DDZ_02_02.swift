@@ -15,8 +15,7 @@ for _ in 1...Int(readLine()!)! {
                 t.removeLast()
                 t.append(contentsOf: c[1])
             }
-        default:
-            ()
+        default: ()
     }
 }
 

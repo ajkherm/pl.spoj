@@ -12,7 +12,7 @@ for _ in 1...n {
     r.append(readLine()!
                 .split(separator: " ")
                 .map { Int($0)! }
-                .reduce(0,+))
+                .reduce(0, +))
 }
 
 (0..<n).forEach { print(r[$0]) }

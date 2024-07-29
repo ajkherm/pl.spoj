@@ -1,0 +1,25 @@
+#!/usr/bin/env xcrun swift
+/// https://pl.spoj.com/problems/FR_19_05/
+
+for _ in 1...Int(readLine()!)! {
+    let w = readLine()!
+    let a = w.firstIndex {
+        "0"..."9" ~= $0
+    }
+
+    guard a != nil else {
+        print("BRAK")
+        continue
+    }
+
+    let z = w.lastIndex {
+        "0"..."9" ~= $0
+    }
+
+    guard a != z else {
+        print("BRAK")
+        continue
+    }
+
+    print(w[a!], w[z!])
+}
